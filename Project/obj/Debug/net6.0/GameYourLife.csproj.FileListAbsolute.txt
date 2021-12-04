@@ -1,0 +1,15 @@
+D:\(Important)MyProjects\GameYourLife\bin\Debug\net6.0\GameYourLife.exe
+D:\(Important)MyProjects\GameYourLife\bin\Debug\net6.0\GameYourLife.deps.json
+D:\(Important)MyProjects\GameYourLife\bin\Debug\net6.0\GameYourLife.runtimeconfig.json
+D:\(Important)MyProjects\GameYourLife\bin\Debug\net6.0\GameYourLife.dll
+D:\(Important)MyProjects\GameYourLife\bin\Debug\net6.0\ref\GameYourLife.dll
+D:\(Important)MyProjects\GameYourLife\bin\Debug\net6.0\GameYourLife.pdb
+D:\(Important)MyProjects\GameYourLife\obj\Debug\net6.0\GameYourLife.csproj.AssemblyReference.cache
+D:\(Important)MyProjects\GameYourLife\obj\Debug\net6.0\GameYourLife.GeneratedMSBuildEditorConfig.editorconfig
+D:\(Important)MyProjects\GameYourLife\obj\Debug\net6.0\GameYourLife.AssemblyInfoInputs.cache
+D:\(Important)MyProjects\GameYourLife\obj\Debug\net6.0\GameYourLife.AssemblyInfo.cs
+D:\(Important)MyProjects\GameYourLife\obj\Debug\net6.0\GameYourLife.csproj.CoreCompileInputs.cache
+D:\(Important)MyProjects\GameYourLife\obj\Debug\net6.0\GameYourLife.dll
+D:\(Important)MyProjects\GameYourLife\obj\Debug\net6.0\ref\GameYourLife.dll
+D:\(Important)MyProjects\GameYourLife\obj\Debug\net6.0\GameYourLife.pdb
+D:\(Important)MyProjects\GameYourLife\obj\Debug\net6.0\GameYourLife.genruntimeconfig.cache
