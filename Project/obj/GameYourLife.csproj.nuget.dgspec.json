@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\(Important)MyProjects\\GameYourLife\\GameYourLife.csproj": {}
+    "D:\\Important_MyProjects\\GameYourLife\\Project\\GameYourLife.csproj": {}
   },
   "projects": {
-    "D:\\(Important)MyProjects\\GameYourLife\\GameYourLife.csproj": {
+    "D:\\Important_MyProjects\\GameYourLife\\Project\\GameYourLife.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\(Important)MyProjects\\GameYourLife\\GameYourLife.csproj",
+        "projectUniqueName": "D:\\Important_MyProjects\\GameYourLife\\Project\\GameYourLife.csproj",
         "projectName": "GameYourLife",
-        "projectPath": "D:\\(Important)MyProjects\\GameYourLife\\GameYourLife.csproj",
+        "projectPath": "D:\\Important_MyProjects\\GameYourLife\\Project\\GameYourLife.csproj",
         "packagesPath": "C:\\Users\\motxo\\.nuget\\packages\\",
-        "outputPath": "D:\\(Important)MyProjects\\GameYourLife\\obj\\",
+        "outputPath": "D:\\Important_MyProjects\\GameYourLife\\Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
