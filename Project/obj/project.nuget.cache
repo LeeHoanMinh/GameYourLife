@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kH3SMTnIRJQaOd/pvqpjUbFEKR/pi1ESl3xwVqVzprc9NwHQ69n+3VYkhBfAWWrsEz/EFbcYzU/fxsvyagz7yA==",
+  "dgSpecHash": "IHOoJueIzZyNPm4WS2O5tTdLDH6ktQS/7jS6IHf2r4nUIg3hMLWgJluxmtvuUudU+cMqhHRK6nL5t3aeHAP2JQ==",
   "success": true,
   "projectFilePath": "D:\\Important_MyProjects\\GameYourLife\\Project\\GameYourLife.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\motxo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

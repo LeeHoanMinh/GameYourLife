@@ -1,13 +1,13 @@
-﻿
+﻿using System;
 namespace MainApp
 {
     static class Program
     {   
-        private static Player player;
+        private static PlayerManager playerManager;
         static void Main(string[] args)
         {
-            player = new Player(Enums.PlayerInfoDirectory);
-            UserInput userInput =  new UserInput();
+            playerManager = new PlayerManager(Enums.PlayerInfoDirectory);
+            UserInput userInput = new UserInput();
             string userString;
             do
             {
@@ -15,6 +15,7 @@ namespace MainApp
                 userString = Console.ReadLine();
                 userInput.CheckInput(userString);
                 Navigator(userInput);
+                playerManager.SavePlayerData();
                 Console.Write("\n");
 
             }while(userString != "exit");
@@ -25,16 +26,15 @@ namespace MainApp
             switch(userInput.currentType)
             {
                 case UserInput.UserInputSematic.DisplayUserInfo:
-                player.DisplayInfo();
+                playerManager.player.DisplayInfo();
                 break;
 
                 case UserInput.UserInputSematic.AddExp:
-                player.AddExp(5);
+                playerManager.player.AddExp(5);
                 break;
-
-        
             }
         }
+
     }
 }
 

@@ -1,13 +1,18 @@
 using System;
+using System.IO;
+using Newtonsoft.Json;
+
 namespace MainApp
 {
     public class Player
     {
-        private PlayerLevel _playerLevel;
-        public Player(string playerInfoDirectory)
+        [JsonProperty] private PlayerLevel _playerLevel;
+        //[JsonProperty] private int _playerDiamonds;
+        public Player()
         {
             // Input player info from directory storage
             _playerLevel = new PlayerLevel();
+            //_playerDiamonds = 0;
         }
 
         public void DisplayInfo()
@@ -15,6 +20,7 @@ namespace MainApp
             Console.WriteLine("Player");
             Console.WriteLine("Level: " + _playerLevel.CurrentLevel);
             Console.WriteLine("Exp: " + _playerLevel.GetExpExpression);
+            //Console.WriteLine("Diamond: " + _playerDiamonds);
         }
 
         public void AddExp(int exp)

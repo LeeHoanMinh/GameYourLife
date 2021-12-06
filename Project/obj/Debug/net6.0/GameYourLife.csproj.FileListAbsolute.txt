@@ -28,3 +28,5 @@ D:\Important_MyProjects\GameYourLife\Project\obj\Debug\net6.0\GameYourLife.dll
 D:\Important_MyProjects\GameYourLife\Project\obj\Debug\net6.0\ref\GameYourLife.dll
 D:\Important_MyProjects\GameYourLife\Project\obj\Debug\net6.0\GameYourLife.pdb
 D:\Important_MyProjects\GameYourLife\Project\obj\Debug\net6.0\GameYourLife.genruntimeconfig.cache
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Important_MyProjects\GameYourLife\Project\obj\Debug\net6.0\GameYourLife.csproj.CopyComplete
