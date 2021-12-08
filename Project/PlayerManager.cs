@@ -1,20 +1,20 @@
 using System;
+using System.IO;
 namespace MainApp
 {
-    
     public class PlayerManager
     {   
         public Player player;
-        public PlayerManager(string playerInfoDirectory)
+        public PlayerManager()
         {
-            if(File.Exists(playerInfoDirectory))
+            if(File.Exists(Enums.PlayerInfoDirectory))
             {
-                player = JSONSaveLoad.ReadFromJsonFile<Player>(playerInfoDirectory);
+                player = JSONSaveLoad.ReadFromJsonFile<Player>(Enums.PlayerInfoDirectory);
             }
             else 
             {
                 player = new Player();
-                JSONSaveLoad.WriteToJsonFile<Player>(playerInfoDirectory, player);
+                JSONSaveLoad.WriteToJsonFile<Player>(Enums.PlayerInfoDirectory, player);
             }
         }
 
@@ -22,7 +22,10 @@ namespace MainApp
         {
             JSONSaveLoad.WriteToJsonFile<Player>(Enums.PlayerInfoDirectory, player);
         }
+
+
     }
+
 
 }
 

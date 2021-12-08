@@ -7,6 +7,8 @@ namespace MainApp
         {
             DisplayUserInfo,
             AddExp,
+            AddTask,
+            ShowTask,
             None
         }
         public UserInputSematic currentType;
@@ -19,9 +21,12 @@ namespace MainApp
                 break;
 
                 case "add":
-                currentType = UserInputSematic.AddExp;
+                currentType = UserInputSematic.AddTask;
                 break;
 
+                case "show":
+                currentType = UserInputSematic.ShowTask;
+                break;
                 default:
                 currentType = UserInputSematic.None;
                 break;

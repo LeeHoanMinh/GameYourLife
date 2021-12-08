@@ -1,39 +1,31 @@
 using System;
 using System.IO;
 using Newtonsoft.Json;
+using System.Threading;
 class JSONSaveLoad
 {
-    public static void WriteToJsonFile<T>(string filePath, T objectToWrite, bool append = false) where T : new()
+    public static void WriteToJsonFile<T>(string filePath, T objectToWrite, bool append = false) where T: new()
     {
-        Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+        string directory = Path.GetDirectoryName(filePath);
+        if(!Directory.Exists(directory))
+            Directory.CreateDirectory(directory);
+        
+        FileInfo file = new FileInfo(filePath);
         TextWriter writer = null;
-        try
-        {
-            var contentsToWriteToFile = JsonConvert.SerializeObject(objectToWrite);
-            writer = new StreamWriter(filePath, append);
-            writer.Write(contentsToWriteToFile);
-        }
-        finally
-        {
-            if (writer != null)
-                writer.Close();
-        }
+        var contentsToWriteToFile = JsonConvert.SerializeObject(objectToWrite);
+        writer = new StreamWriter(filePath, append);
+        writer.Write(contentsToWriteToFile);
+        writer.Close();
     }
 
 
-    public static T ReadFromJsonFile<T>(string filePath) where T : new()
-    {
+    public static T ReadFromJsonFile<T>(string filePath) where T:new()
+    { 
+        FileInfo file = new FileInfo(filePath);
         TextReader reader = null;
-        try
-        {
-            reader = new StreamReader(filePath);
-            var fileContents = reader.ReadToEnd();
-            return JsonConvert.DeserializeObject<T>(fileContents);
-        }
-        finally
-        {
-            if (reader != null)
-                reader.Close();
-        }
+        reader = new StreamReader(filePath);
+        var fileContents = reader.ReadToEnd();
+        reader.Close();
+        return JsonConvert.DeserializeObject<T>(fileContents);
     }
 }
