@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using CommandLine;
 namespace MainApp
 {
     public class PlayerManager
@@ -23,6 +24,21 @@ namespace MainApp
             JSONSaveLoad.WriteToJsonFile<Player>(Enums.PlayerInfoDirectory, player);
         }
 
+        public void ReceiveCommand(PlayerOptions opts)
+        {
+            Parser.Default.ParseArguments<InfoOption, object>(opts.Parameters)
+                .WithParsed<InfoOption>(ShowPlayerInfoCallback);
+        }
+
+        public void ShowPlayerInfoCallback(InfoOption opts)
+        {
+            player.DisplayInfo();
+        }
+        public void AddPlayerActionToTask(Task task)
+        {
+            Console.Write("Add Task");
+            task.taskDone += player.AddValuesBasedOnTask;
+        }
 
     }
 

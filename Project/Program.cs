@@ -1,51 +1,49 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
+using CommandLine;
 namespace MainApp
 {
     static class Program
     {   
         private static PlayerManager playerManager;
         private static TaskManager taskManager;
+    
         static void Main(string[] args)
         {
             playerManager = new PlayerManager();
             taskManager = new TaskManager();
-            UserInput userInput = new UserInput();
+            LinkManagersEvent();
             string userString;
             do
             {
                 Console.Write(">>> ");
                 userString = Console.ReadLine();
-                Thread.Sleep(20);
-                userInput.CheckInput(userString);
-                Navigator(userInput);
+                Thread.Sleep(20); //For interrupt process not cut down the app
+                var parser = new Parser(
+                    with=>
+                    {
+                        with.EnableDashDash = true;
+                    }
+                );
+                parser.ParseArguments<PlayerOptions, TaskOptions>(userString.Split())
+                .WithParsed<PlayerOptions>(playerManager.ReceiveCommand)
+                .WithParsed<TaskOptions>(taskManager.ReceiveCommand);
+
                 playerManager.SavePlayerData();
                 taskManager.SaveTaskData();
                 Console.Write("\n");
 
             }while(userString != "exit");
         }
-    
-        private static void Navigator(UserInput userInput)
+
+        public static void LinkManagersEvent()
         {
-            switch(userInput.currentType)
+            foreach(Task task in taskManager.tasks)
             {
-                case UserInput.UserInputSematic.DisplayUserInfo:
-                playerManager.player.DisplayInfo();
-                break;
-
-                case UserInput.UserInputSematic.AddExp:
-                playerManager.player.AddExp(5);
-                break;
-
-                case UserInput.UserInputSematic.AddTask:
-                taskManager.AddTask(new Task(0, 2, "Readbook", 1, true));
-                break;
-
-                case UserInput.UserInputSematic.ShowTask:
-                taskManager.ShowTask();
-                break;   
+                task.taskDone += playerManager.player.AddValuesBasedOnTask;
             }
+            taskManager.taskAdded += playerManager.AddPlayerActionToTask;
         }
 
     }

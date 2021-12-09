@@ -28,5 +28,14 @@ namespace MainApp
             _playerLevel.AddExp(exp);
             Console.WriteLine("Exp Added!");
         }
+
+        public void AddValuesBasedOnTask(int exp, int gem)
+        {
+            Console.WriteLine("Player exp is added: " + exp.ToString());
+            Console.WriteLine("Player gem is added: " + gem.ToString());
+            _playerLevel.AddExp(exp);
+            _playerDiamonds += gem;
+        }
+
     }
 }

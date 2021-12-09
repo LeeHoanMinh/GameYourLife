@@ -1,0 +1,11 @@
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\publish\GameYourLife.exe
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\publish\GameYourLife.dll
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\publish\GameYourLife.deps.json
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\publish\GameYourLife.runtimeconfig.json
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\publish\GameYourLife.pdb
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\publish\CommandLine.dll
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\publish\CommandLineParser.dll
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\publish\Microsoft.Extensions.DependencyInjection.dll
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\publish\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Important_MyProjects\GameYourLife\Project\bin\Debug\net6.0\publish\Newtonsoft.Json.dll

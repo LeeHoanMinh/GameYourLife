@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "IHOoJueIzZyNPm4WS2O5tTdLDH6ktQS/7jS6IHf2r4nUIg3hMLWgJluxmtvuUudU+cMqhHRK6nL5t3aeHAP2JQ==",
+  "dgSpecHash": "tM2R5XrYQg1fZz2f935YijTiRgI9Fy6pVdoPYqsZVeIZmEU4tzmKBjYCVnkDaQZZmA36tYSDu/oWJTuO8mxS1Q==",
   "success": true,
   "projectFilePath": "D:\\Important_MyProjects\\GameYourLife\\Project\\GameYourLife.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\motxo\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512",
+    "C:\\Users\\motxo\\.nuget\\packages\\matthiware.commandlineparser\\0.6.0\\matthiware.commandlineparser.0.6.0.nupkg.sha512",
+    "C:\\Users\\motxo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\motxo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\motxo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\motxo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []

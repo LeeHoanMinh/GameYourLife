@@ -21,7 +21,7 @@ namespace MainApp
         public void AddExp(int exp)
         {
             // Add exp for user, and if level up, do something
-            _currentExp += 5;
+            _currentExp += exp;
             if(_currentExp >= Enums.ExperienceToPastLevel[_currentLevel])
             {
                 LevelUp();
